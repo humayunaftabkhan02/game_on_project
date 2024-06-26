@@ -1,0 +1,31 @@
+.search-container {
+    width: 500px;
+}
+
+.search-container form {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-container form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-container form button {
+    padding: 10px 20px;
+    background-color: #ffc000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container form button:hover {
+    background-color: #dbdbdb;
+}

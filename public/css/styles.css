@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.global-header {
+    background: #000000;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: fixed;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.btn-l1:hover,
+.btn-l1:focus,
+.btn-l1:active {
+    background-color: #fff;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.btn-l1 {
+    width: 100% !important;
+    background-color: orange;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: url('/images/hero-bg.jpg') center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.register {
+    background: url('/images/register-bg.jpg') center/cover;
+    padding: 188px;
+    text-align: center;
+    color: #fff;
+}
+
+.register h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.register p {
+    margin-bottom: 20px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.register input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.register button {
+    padding: 10px 20px;
+    width: 10%;
+	background-color: orange;
+	border: 2px solid #fff;
+}
+
+.login button:hover,
+.contact button:hover,
+.register button:hover {
+    background: #fff;
+    color: #333;
+	border: 2px solid #fff;
+}
+
+.login button:active,
+.contact button:active,
+.register button:active {
+    background: #fff !important;
+    color: #333 !important;
+	border: 2px solid #fff !important;
+}
+
+.login button:focus,
+.contact button:focus,
+.register button:focus {
+    background: #fff !important;
+    color: #333 !important;
+	border: 2px solid #fff !important;
+}
+
+.login {
+    background: url('/images/login-bg.jpg') center/cover;
+    padding: 239px;
+    text-align: center;
+    color: #fff;
+}
+
+.login h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login p {
+    margin-bottom: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login button {
+    padding: 10px 20px;
+    width: 10%;
+	background-color: orange;
+	border: 2px solid #fff;
+}
+
+.contact {
+    background: url('/images/contact-bg.jpg') center/cover;
+    padding: 165px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact textarea {
+    width: 500px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    width: 20%;
+	background-color: orange;
+	border: 2px solid #fff;
+}
+
+.reviews {
+    background: url('/images/reviews-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.reviews-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.latest-news,
+.featured-games,
+.trending-topics {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.latest-news:hover,
+.featured-games:hover,
+.trending-topics:hover {
+    transform: translateY(-5px);
+}
+
+.latest-news img,
+.featured-games img,
+.trending-topics img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.latest-news h2,
+.featured-games h2,
+.trending-topics h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.latest-news h3,
+.featured-games h3,
+.trending-topics h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.latest-news p,
+.featured-games p,
+.trending-topics p {
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+}
+
+.latest-news a,
+.featured-games a,
+.trending-topics a {
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.latest-news a:hover,
+.featured-games a:hover,
+.trending-topics a:hover {
+    background: #dbdbdb;
+    color: #333;
+}
+
+.trending-topics {
+    order: 3;
+    margin: auto;
+}
+
+.videos {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.videos:hover {
+    transform: translateY(-5px);
+}
+
+.videos iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.videos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.videos h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.videos p {
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .register,
+    .login,
+    .contact {
+        padding: 80px;
+    }
+    
+    .register h2,
+    .login h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .register p,
+    .login p,
+    .contact p {
+        margin-bottom: 15px;
+    }
+
+    .register input,
+    .register button,
+    .login input,
+    .login button,
+    .contact input,
+    .contact button {
+        width: calc(100% - 20px);
+    }
+}
